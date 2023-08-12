@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/file.js" defer></script>
+    <script src="./js/main.js" defer></script>
+  
+    <title>IMAGES</title>
+</head>
+<body>
+   <header class="header">
+        <div class="container">
+            <h1 class="header__title">Редактор картинок</h1>
+        </div>
+   </header>
+
+   <main class="main">
+        <section class="images">
+            <div class="container">
+                <div class="file__inner">
+                    <input type="file" class="images__file">
+                    <div class="checked">
+                        <input type="checkbox" class="images__text_checked">
+                        <p class="checked__text">Вкл/выкл добавления текста к картинке</p>
+                    </div>
+                </div>
+    
+                <div class="images__inner">
+                    <div class="images__wrapper">
+                        <div class="images__box">
+                            <div class="img">
+                                <img src="./images/default.jpg" alt="" class="images__img">
+                                <p class="images__text dn"></p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="images__input dn">
+                            <input type="text" class="images__text-input" placeholder="Ввод текста">
+                            <div class="text__settings">
+                                <div class="text__settings-inner">
+                                    <input type="range" class="inputs images__setting images__setting-top" min="0" max="100" value="0">
+                                    <p class="text__settings-title">Вверх / Низ</p>
+                                </div>
+
+                                <div class="text__settings-inner">
+                                    <input type="range" class="inputs images__setting images__setting-left" min="0" max="100" value="0">
+                                    <p class="text__settings-title">Влево / Вправо</p>
+                                </div>
+                                
+                                <div class="text__settings-inner">
+                                    <input type="range" class="inputs images__setting images__setting-font-size" min="14" max="100" value="14">
+                                    <p class="text__settings-title">Размер шрифта</p>
+                                </div>
+                               
+                                <div class="text__settings-inner">
+                                    <input type="range" class="inputs images__setting images__setting-rotate" min="0" max="360" value="0">
+                                    <p class="text__settings-title">Вращение текста</p>
+                                </div>
+                                
+                                <div class="text__settings-inner">
+                                    <input type="color" class="images__setting images__setting-color">
+                                    <p class="text__settings-title">Цвет текста</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="images__settings">
+                        <div class="wrapper">
+                            <h2 class="settings__title">Размытие</h2>
+                        <div class="settings__inner">
+                            <input type="range" class="inputs setting settings__blur" min="0" max="10" value="0">
+                            <p class="settings__value value-blur">0</p>
+                        </div>
+
+                        <h2 class="settings__title">Контраст</h2>
+                        <div class="settings__inner">
+                            <input type="range" class="inputs setting settings__contrast" min="1" max="10" value="1">
+                            <p class="settings__value value-contrast">1</p>
+                        </div>
+
+                        <h2 class="settings__title">Оттенки серого</h2>
+                        <div class="settings__inner">
+                            <input type="range" class="inputs setting settings__grayscale" min="0" max="100" value="0">
+                            <p class="settings__value value-grayscale">0</p>
+                        </div>
+
+                        <h2 class="settings__title">Поворот цвета</h2>
+                        <div class="settings__inner">
+                            <input type="range" class="inputs setting settings__hue-rotate" min="0" max="360" value="0">
+                            <p class="settings__value value-hue-rotate">0</p>
+                        </div>
+
+                        <h2 class="settings__title">Инверсия</h2>
+                        <div class="settings__inner">
+                            <input type="range" class="inputs setting settings__invert" min="0" max="100" value="0">
+                            <p class="settings__value value-invert">0</p>
+                        </div>
+                        
+                        <h2 class="settings__title">Прозрачность</h2>
+                        <div class="settings__inner">
+                            <input type="range" class="inputs setting settings__opacity" min="0" max="100" value="100">
+                            <p class="settings__value value-opacity">0</p>
+                        </div>
+
+                        <h2 class="settings__title">Насыщенность</h2>
+                        <div class="settings__inner">
+                            <input type="range" class="inputs setting settings__saturate" min="0" max="100" value="100">
+                            <p class="settings__value value-saturate">0</p>
+                        </div>
+
+                        <h2 class="settings__title">Cепия</h2>
+                        <div class="settings__inner">
+                            <input type="range" class="inputs setting settings__sepia" min="0" max="100" value="0">
+                            <p class="settings__value value-sepia">0</p>
+                        </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+   </main>
+
+</body>
+</html>

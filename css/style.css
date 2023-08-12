@@ -1,0 +1,144 @@
+body {
+    font-family: 'Handjet', cursive;
+    background-color: #2F2F2F;
+    color: #E63946;
+    min-height: 100vh;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 1500px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.inputs {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #FFCF00;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    width: 250px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.inputs:hover {
+    opacity: 1;
+}
+
+.inputs::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background-color: #E63946;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.header {
+    padding: 10px 0 10px;
+}
+
+.header__title {
+    font-size: 72px;
+    text-align: center;
+}
+
+.images {
+    padding: 20px 0 20px;
+}
+
+
+.images__text-input {
+    display: block;
+    padding: 5px 10px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.text__settings {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+.images__setting {
+    width: 100px;
+    height: 5px;
+}
+
+.images__setting::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+}
+
+.images__inner {
+    display: flex;
+    gap: 0 150px;
+}
+
+.file__inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checked {
+    display: flex;
+    gap: 0 10px;
+    align-items: center;
+}
+
+.images__box {
+    margin-bottom: 20px;
+}
+
+.img {
+    position: relative;
+    overflow: hidden;
+}
+
+.images__text {
+    position: absolute;
+    top: 0;
+    
+}
+
+.dn {
+    display: none;
+}
+
+.images__setting-color {
+    width: 100px;
+    height: 30px;
+}
+
+.text__settings-inner {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+}
+
+.images__img {
+    width: 800px;
+    height: 560px;
+    object-fit: contain;
+    background-color: #ddd;
+}
+
+.settings__title {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.settings__inner {
+    display: flex;
+    align-items: center;
+    gap: 0 25px;
+    margin-bottom: 20px;
+}
